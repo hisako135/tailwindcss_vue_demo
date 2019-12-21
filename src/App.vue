@@ -1,28 +1,48 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <Header/>
+    <main class="p-4">
+      <div class="px-2">
+        <div class="flex flex-wrap -mx-2">
+          <VacationCard
+            img="http://lorempixel.com/400/300/nature/"
+            imgAlt="Beach in Cancun"
+            eyebrow="Private Villa"
+            title="Relaxing All-Inclusive Resort in Cancun"
+            pricing="$299 USD per night"
+            url="/vacations/cancun"
+          />
+          <VacationCard
+            img="http://lorempixel.com/400/300/nature/"
+            imgAlt="Beach in Cancun"
+            eyebrow="Private Villa"
+            title="Relaxing All-Inclusive Resort in Cancun"
+            pricing="$299 USD per night"
+            url="/vacations/cancun"
+          />
+          <VacationCard
+            img="http://lorempixel.com/400/300/nature/"
+            imgAlt="Beach in Cancun"
+            eyebrow="Private Villa"
+            title="Relaxing All-Inclusive Resort in Cancun"
+            pricing="$299 USD per night"
+            url="/vacations/cancun"
+          />
+        </div>
+      </div>
+    </main>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Header from './components/Header.vue'
+import VacationCard from './components/VacationCard.vue'
 
 export default {
   name: 'app',
   components: {
-    HelloWorld
+    Header,
+    VacationCard
   }
 }
 </script>
-
-<style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
